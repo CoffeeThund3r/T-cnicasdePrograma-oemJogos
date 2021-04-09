@@ -1,0 +1,39 @@
+namespace _26032021
+{
+    class Program
+    {//aula do dia 26 de março de 2021.
+
+        // Exercicio - Utilizando vetores faça um algoritimo que receba 10 valores, armazene o dobro de cada valor em outro vetor e mostre-os.
+        //Agora crie outro vetor em que irá armazenar a soma dos outros dois vetores.
+
+        static void Main(string[] args)
+        {
+            int z = 10;
+            int[] x = new int[z];
+            int[] y = new int[z];
+            int[] w = new int[z];
+            
+            for (int i = 0; i < z; i++)
+            {
+                x[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            for (int i = 0; i < z; i++)
+            {
+                Console.WriteLine(x[i]);
+            }
+            for (int i = 0; i < z; i++)
+            {
+                y[i] = 2 * x[i]; 
+            }
+            for (int i = 0; i < z; i++)
+            {
+                Console.WriteLine("2 x" + x[i] + " = " + y[i]);
+            }
+            for (int i = 0; i < z; i++)
+            {
+                w[i] = x[i] + y[i];
+            }
+           
+            }
+    }
+}
