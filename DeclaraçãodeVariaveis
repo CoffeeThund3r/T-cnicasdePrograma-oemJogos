@@ -1,0 +1,21 @@
+namespace exercicio1_marina_carvalho
+{
+    //Na aula de hoje aprendi a declarar variáveis e fazer contas simples
+    class Calculator
+    {
+        //Esta função faz a multiplicação entre 2 números
+        static void Main(string[] args)
+        {
+            //Esta linha vai apresentar um texto para o usuário
+            Console.WriteLine("Digite um número");
+            //Esta linha recebe um valor e converte para o tipo inteiro
+            int n1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Digite mais um número");
+            //Esta linha recebe um valor e converte para o tipo inteiro
+            int n2 = Convert.ToInt32(Console.ReadLine());
+            int r = n1 * n2;
+            //Esta linha apresenta o resultado da multiplicação
+            Console.WriteLine("o valor de " + n1 + " x " + n2  + " é " + r);
+        }
+    }
+}
